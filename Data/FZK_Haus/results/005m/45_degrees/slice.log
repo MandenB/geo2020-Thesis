@@ -1,0 +1,43 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-63349425784a
+Exec   : /home/bmanden/OpenFOAM-7/platforms/linux64GccDPInt32Opt/bin/postProcess -dict system/sampleDict -fields (U p k epsilon)
+Date   : Sep 04 2025
+Time   : 16:30:40
+Host   : "cmp257"
+PID    : 3457284
+I/O    : uncollated
+Case   : /scratch/bmanden/FZK-Haus_2/results/005m/45_degrees
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 2000
+
+Reading surface description:
+    z_0.5
+    z_1.0
+    z_1.5
+    z_2.0
+    z_2.5
+    z_3.0
+
+Time = 2000
+
+Reading fields:
+    volScalarFields: p k epsilon
+    volVectorFields: U
+
+Executing functionObjects
+
+End
+

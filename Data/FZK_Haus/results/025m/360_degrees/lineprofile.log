@@ -1,0 +1,83 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-63349425784a
+Exec   : /home/bmanden/OpenFOAM-7/platforms/linux64GccDPInt32Opt/bin/postProcess -dict system/lineDict -fields (U p k epsilon)
+Date   : Sep 11 2025
+Time   : 04:30:18
+Host   : "cmp247"
+PID    : 3783647
+I/O    : uncollated
+Case   : /scratch/bmanden/FZK-Haus_2/results/025m/360_degrees
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 2000
+
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const vector&, Foam::label, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const vector&, Foam::label, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const vector&, Foam::label, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+--> FOAM Warning : 
+    From function void Foam::particle::locate(const vector&, Foam::label, bool, Foam::string)
+    in file particle/particle.C at line 495
+    Particle initialised with a location outside of the mesh.
+Reading set description:
+    xy_0
+    xy_1
+    xy_2
+    xy_3
+    xy_4
+    xy_5
+    xy_6
+    xy_7
+    xy_8
+    xy_9
+    xy_10
+    xy_11
+    xy_12
+    xy_13
+    xy_14
+    xy_15
+    xy_16
+    xy_17
+    xy_18
+    xy_19
+    xy_20
+    xy_21
+    xy_22
+    xy_23
+    xy_24
+    xy_25
+    xy_26
+    xy_27
+    xy_28
+    xy_29
+
+Time = 2000
+
+Reading fields:
+    volScalarFields: p k epsilon
+    volVectorFields: U
+
+Executing functionObjects
+
+End
+

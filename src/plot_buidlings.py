@@ -2,14 +2,11 @@ import trimesh
 import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
-from matplotlib import colors
 from cmcrameri import cm
-from cmcrameri import show_cmaps
 import numpy as np
 import plotly.graph_objects as go
 import plotly.io as pio
 from matplotlib.collections import LineCollection
-from scipy.spatial import ConvexHull
 import alphashape
 from shapely.geometry import Polygon, MultiPolygon
 
@@ -167,7 +164,7 @@ def plot_2d_slices(models, building, slice_plane, slice_value, names):
     y_max = np.abs(x_range[1] - x_range[0])
     plt.ylim(0, y_max)
     plt.legend()
-    plt.savefig(f'../figures/{building}/slice_{slice_plane}_{slice_value}.pdf', format='pdf', bbox_inches='tight')
+    plt.savefig(f'../figures/buildings/{building}/slice_{slice_plane}_{slice_value}.pdf', format='pdf', bbox_inches='tight')
 
     plt.show()
 
@@ -207,7 +204,7 @@ def plot_3d_models(models, building):
     )
     fig.show()
 
-    pio.write_image(fig, f'../figures/{building}/3d_model.pdf', format="pdf", width=2000, height=1600)
+    pio.write_image(fig, f'../figures/buildings/{building}/3d_model.pdf', format="pdf", width=2000, height=1600)
 
 from scipy.spatial import ConvexHull
 
@@ -325,7 +322,7 @@ def main():
         {'orientation': 'y', 'position': 0, 'label': 'B'}
     ]
 
-    plot_topview_roof_convex(models[0], building, roof_color='lightgray', axis_lines=axis_lines)
+    #plot_topview_roof_convex(models[0], building, roof_color='lightgray', axis_lines=axis_lines)
 
 if __name__ == "__main__":
     main()

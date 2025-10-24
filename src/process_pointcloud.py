@@ -6,14 +6,12 @@ import matplotlib
 
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
-from matplotlib import colors
 from cmcrameri import cm
 from matplotlib.lines import Line2D
 import matplotlib.colors as mcolors
 import trimesh
 import math
 from dataclasses import dataclass
-from typing import Dict, List, Tuple, Optional
 
 
 @dataclass
@@ -29,7 +27,7 @@ class ErrorMetrics:
 
 # === CONFIG ==
 """Configure the required parameters"""
-buildings = ["A-40", "FZK_Haus", "Institute"]
+buildings = ["FZK_Haus"]
 data_dir = fr"..\Data"
 default_obj_path = fr"..\buildings"
 sizes = ["1m", "05m", "025m", "01m", "005m", "0025m", "truth"]
@@ -618,8 +616,8 @@ def main():
             for angle, angle_errors in z_errors.items():
                 for size, metrics in angle_errors.items():
                     obj_path = os.path.join(default_obj_path, f"{building}/{building}_{size}.obj")
-                    os.makedirs(f"figures/heatmap/{building}/{z_value}/{angle}", exist_ok=True)
-                    output_dir = f"figures/heatmap/{building}/{z_value}/{angle}/{size}.pdf"
+                    os.makedirs(f"../figures/heatmap/{building}/{z_value}/{angle}", exist_ok=True)
+                    output_dir = f"../figures/heatmap/{building}/{z_value}/{angle}/{size}.pdf"
 
                     plot_error_isolines(
                         metrics.coords,

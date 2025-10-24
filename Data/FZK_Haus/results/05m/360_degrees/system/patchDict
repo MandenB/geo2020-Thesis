@@ -1,0 +1,33 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      patchDict;
+}
+
+functions
+{
+    Buildings
+    {
+        type            surfaces;
+        functionObjectLibs ("libsampling.so");
+
+        interpolationScheme cellPoint;
+        surfaceFormat    vtk;
+
+        fields
+        (
+            U p k epsilon
+        );
+
+        surfaces
+        (
+            building
+            {
+                type        patch;
+                patches     ("Buildings");
+            }
+        );
+    }
+}

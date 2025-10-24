@@ -1,0 +1,730 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-63349425784a
+Exec   : /home/bmanden/OpenFOAM-7/platforms/linux64GccDPInt32Opt/bin/decomposePar -force
+Date   : Sep 03 2025
+Time   : 02:10:27
+Host   : "cmp236"
+PID    : 865357
+I/O    : uncollated
+Case   : /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Removing 0 existing processor directories
+
+
+Decomposing mesh region0
+
+Create mesh
+
+Calculating distribution of cells
+ Foam::decompositionMethod::New 
+{
+    numberOfSubdomains 32;
+    method          hierarchical;
+    hierarchicalCoeffs
+    {
+        n               ( 4 4 2 );
+        delta           0.001;
+        order           xyz;
+    }
+    distributed     no;
+}
+
+Selecting decompositionMethod hierarchical
+
+Finished decomposition in 6.93 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 543625
+    Number of faces shared with processor 1 = 2822
+    Number of faces shared with processor 4 = 3367
+    Number of faces shared with processor 16 = 105056
+    Number of processor patches = 3
+    Number of processor faces = 111245
+    Number of boundary faces = 106173
+
+Processor 1
+    Number of cells = 543625
+    Number of faces shared with processor 0 = 2822
+    Number of faces shared with processor 2 = 4477
+    Number of faces shared with processor 4 = 1449
+    Number of faces shared with processor 5 = 2107
+    Number of faces shared with processor 16 = 1038
+    Number of faces shared with processor 17 = 101239
+    Number of processor patches = 6
+    Number of processor faces = 113132
+    Number of boundary faces = 101096
+
+Processor 2
+    Number of cells = 543625
+    Number of faces shared with processor 1 = 4477
+    Number of faces shared with processor 3 = 3569
+    Number of faces shared with processor 5 = 5
+    Number of faces shared with processor 6 = 2110
+    Number of faces shared with processor 7 = 1452
+    Number of faces shared with processor 17 = 259
+    Number of faces shared with processor 18 = 101216
+    Number of processor patches = 7
+    Number of processor faces = 113088
+    Number of boundary faces = 101054
+
+Processor 3
+    Number of cells = 543625
+    Number of faces shared with processor 2 = 3569
+    Number of faces shared with processor 7 = 3099
+    Number of faces shared with processor 18 = 132
+    Number of faces shared with processor 19 = 105257
+    Number of processor patches = 4
+    Number of processor faces = 112057
+    Number of boundary faces = 105755
+
+Processor 4
+    Number of cells = 543625
+    Number of faces shared with processor 0 = 3367
+    Number of faces shared with processor 1 = 1449
+    Number of faces shared with processor 5 = 688
+    Number of faces shared with processor 8 = 3570
+    Number of faces shared with processor 9 = 4
+    Number of faces shared with processor 16 = 812
+    Number of faces shared with processor 17 = 1
+    Number of faces shared with processor 20 = 102985
+    Number of processor patches = 8
+    Number of processor faces = 112876
+    Number of boundary faces = 102764
+
+Processor 5
+    Number of cells = 543625
+    Number of faces shared with processor 1 = 2107
+    Number of faces shared with processor 2 = 5
+    Number of faces shared with processor 4 = 688
+    Number of faces shared with processor 6 = 1211
+    Number of faces shared with processor 9 = 2443
+    Number of faces shared with processor 17 = 2791
+    Number of faces shared with processor 18 = 9
+    Number of faces shared with processor 20 = 1188
+    Number of faces shared with processor 21 = 15384
+    Number of processor patches = 9
+    Number of processor faces = 25826
+    Number of boundary faces = 59924
+
+Processor 6
+    Number of cells = 543625
+    Number of faces shared with processor 2 = 2110
+    Number of faces shared with processor 5 = 1211
+    Number of faces shared with processor 7 = 943
+    Number of faces shared with processor 10 = 2490
+    Number of faces shared with processor 18 = 2890
+    Number of faces shared with processor 21 = 48
+    Number of faces shared with processor 22 = 15264
+    Number of faces shared with processor 23 = 843
+    Number of processor patches = 8
+    Number of processor faces = 25799
+    Number of boundary faces = 59558
+
+Processor 7
+    Number of cells = 543625
+    Number of faces shared with processor 2 = 1452
+    Number of faces shared with processor 3 = 3099
+    Number of faces shared with processor 6 = 943
+    Number of faces shared with processor 11 = 3141
+    Number of faces shared with processor 18 = 290
+    Number of faces shared with processor 19 = 676
+    Number of faces shared with processor 23 = 103000
+    Number of processor patches = 7
+    Number of processor faces = 112601
+    Number of boundary faces = 102445
+
+Processor 8
+    Number of cells = 543625
+    Number of faces shared with processor 4 = 3570
+    Number of faces shared with processor 9 = 786
+    Number of faces shared with processor 12 = 3710
+    Number of faces shared with processor 13 = 1309
+    Number of faces shared with processor 20 = 396
+    Number of faces shared with processor 24 = 102892
+    Number of processor patches = 6
+    Number of processor faces = 112663
+    Number of boundary faces = 102671
+
+Processor 9
+    Number of cells = 543625
+    Number of faces shared with processor 4 = 4
+    Number of faces shared with processor 5 = 2443
+    Number of faces shared with processor 8 = 786
+    Number of faces shared with processor 10 = 1321
+    Number of faces shared with processor 13 = 2539
+    Number of faces shared with processor 20 = 4
+    Number of faces shared with processor 21 = 73
+    Number of faces shared with processor 24 = 1063
+    Number of faces shared with processor 25 = 15303
+    Number of faces shared with processor 29 = 2290
+    Number of processor patches = 10
+    Number of processor faces = 25826
+    Number of boundary faces = 60144
+
+Processor 10
+    Number of cells = 543625
+    Number of faces shared with processor 6 = 2490
+    Number of faces shared with processor 9 = 1321
+    Number of faces shared with processor 11 = 948
+    Number of faces shared with processor 14 = 2527
+    Number of faces shared with processor 22 = 47
+    Number of faces shared with processor 25 = 49
+    Number of faces shared with processor 26 = 15427
+    Number of faces shared with processor 27 = 844
+    Number of faces shared with processor 29 = 7
+    Number of faces shared with processor 30 = 2260
+    Number of processor patches = 10
+    Number of processor faces = 25920
+    Number of boundary faces = 60056
+
+Processor 11
+    Number of cells = 543625
+    Number of faces shared with processor 7 = 3141
+    Number of faces shared with processor 10 = 948
+    Number of faces shared with processor 14 = 1549
+    Number of faces shared with processor 15 = 3242
+    Number of faces shared with processor 23 = 451
+    Number of faces shared with processor 27 = 103026
+    Number of faces shared with processor 30 = 200
+    Number of processor patches = 7
+    Number of processor faces = 112557
+    Number of boundary faces = 102537
+
+Processor 12
+    Number of cells = 543625
+    Number of faces shared with processor 8 = 3710
+    Number of faces shared with processor 13 = 2623
+    Number of faces shared with processor 24 = 570
+    Number of faces shared with processor 28 = 105223
+    Number of processor patches = 4
+    Number of processor faces = 112126
+    Number of boundary faces = 105770
+
+Processor 13
+    Number of cells = 543625
+    Number of faces shared with processor 8 = 1309
+    Number of faces shared with processor 9 = 2539
+    Number of faces shared with processor 12 = 2623
+    Number of faces shared with processor 14 = 3755
+    Number of faces shared with processor 24 = 432
+    Number of faces shared with processor 28 = 289
+    Number of faces shared with processor 29 = 101458
+    Number of processor patches = 7
+    Number of processor faces = 112405
+    Number of boundary faces = 100961
+
+Processor 14
+    Number of cells = 543625
+    Number of faces shared with processor 10 = 2527
+    Number of faces shared with processor 11 = 1549
+    Number of faces shared with processor 13 = 3755
+    Number of faces shared with processor 15 = 2665
+    Number of faces shared with processor 29 = 368
+    Number of faces shared with processor 30 = 101431
+    Number of processor patches = 6
+    Number of processor faces = 112295
+    Number of boundary faces = 100921
+
+Processor 15
+    Number of cells = 543626
+    Number of faces shared with processor 11 = 3242
+    Number of faces shared with processor 14 = 2665
+    Number of faces shared with processor 27 = 796
+    Number of faces shared with processor 30 = 848
+    Number of faces shared with processor 31 = 105017
+    Number of processor patches = 5
+    Number of processor faces = 112568
+    Number of boundary faces = 105388
+
+Processor 16
+    Number of cells = 543626
+    Number of faces shared with processor 0 = 105056
+    Number of faces shared with processor 1 = 1038
+    Number of faces shared with processor 4 = 812
+    Number of faces shared with processor 17 = 5549
+    Number of faces shared with processor 20 = 6833
+    Number of processor patches = 5
+    Number of processor faces = 119288
+    Number of boundary faces = 2578
+
+Processor 17
+    Number of cells = 543626
+    Number of faces shared with processor 1 = 101239
+    Number of faces shared with processor 2 = 259
+    Number of faces shared with processor 4 = 1
+    Number of faces shared with processor 5 = 2791
+    Number of faces shared with processor 16 = 5549
+    Number of faces shared with processor 18 = 8294
+    Number of faces shared with processor 20 = 4127
+    Number of faces shared with processor 21 = 3403
+    Number of processor patches = 8
+    Number of processor faces = 125663
+    Number of boundary faces = 370
+
+Processor 18
+    Number of cells = 543626
+    Number of faces shared with processor 2 = 101216
+    Number of faces shared with processor 3 = 132
+    Number of faces shared with processor 5 = 9
+    Number of faces shared with processor 6 = 2890
+    Number of faces shared with processor 7 = 290
+    Number of faces shared with processor 17 = 8294
+    Number of faces shared with processor 19 = 5735
+    Number of faces shared with processor 21 = 2
+    Number of faces shared with processor 22 = 3359
+    Number of faces shared with processor 23 = 3883
+    Number of processor patches = 10
+    Number of processor faces = 125810
+    Number of boundary faces = 403
+
+Processor 19
+    Number of cells = 543626
+    Number of faces shared with processor 3 = 105257
+    Number of faces shared with processor 7 = 676
+    Number of faces shared with processor 18 = 5735
+    Number of faces shared with processor 23 = 7221
+    Number of processor patches = 4
+    Number of processor faces = 118889
+    Number of boundary faces = 3005
+
+Processor 20
+    Number of cells = 543626
+    Number of faces shared with processor 4 = 102985
+    Number of faces shared with processor 5 = 1188
+    Number of faces shared with processor 8 = 396
+    Number of faces shared with processor 9 = 4
+    Number of faces shared with processor 16 = 6833
+    Number of faces shared with processor 17 = 4127
+    Number of faces shared with processor 21 = 1274
+    Number of faces shared with processor 24 = 7048
+    Number of processor patches = 8
+    Number of processor faces = 123855
+    Number of boundary faces = 603
+
+Processor 21
+    Number of cells = 543626
+    Number of faces shared with processor 5 = 15384
+    Number of faces shared with processor 6 = 48
+    Number of faces shared with processor 9 = 73
+    Number of faces shared with processor 17 = 3403
+    Number of faces shared with processor 18 = 2
+    Number of faces shared with processor 20 = 1274
+    Number of faces shared with processor 22 = 4092
+    Number of faces shared with processor 25 = 5799
+    Number of processor patches = 8
+    Number of processor faces = 30075
+    Number of boundary faces = 53333
+
+Processor 22
+    Number of cells = 543626
+    Number of faces shared with processor 6 = 15264
+    Number of faces shared with processor 10 = 47
+    Number of faces shared with processor 18 = 3359
+    Number of faces shared with processor 21 = 4092
+    Number of faces shared with processor 23 = 1344
+    Number of faces shared with processor 25 = 9
+    Number of faces shared with processor 26 = 5765
+    Number of faces shared with processor 27 = 2
+    Number of processor patches = 8
+    Number of processor faces = 29882
+    Number of boundary faces = 54170
+
+Processor 23
+    Number of cells = 543626
+    Number of faces shared with processor 6 = 843
+    Number of faces shared with processor 7 = 103000
+    Number of faces shared with processor 11 = 451
+    Number of faces shared with processor 18 = 3883
+    Number of faces shared with processor 19 = 7221
+    Number of faces shared with processor 22 = 1344
+    Number of faces shared with processor 27 = 7427
+    Number of processor patches = 7
+    Number of processor faces = 124169
+    Number of boundary faces = 795
+
+Processor 24
+    Number of cells = 543626
+    Number of faces shared with processor 8 = 102892
+    Number of faces shared with processor 9 = 1063
+    Number of faces shared with processor 12 = 570
+    Number of faces shared with processor 13 = 432
+    Number of faces shared with processor 20 = 7048
+    Number of faces shared with processor 25 = 1275
+    Number of faces shared with processor 28 = 6708
+    Number of faces shared with processor 29 = 3875
+    Number of processor patches = 8
+    Number of processor faces = 123863
+    Number of boundary faces = 571
+
+Processor 25
+    Number of cells = 543626
+    Number of faces shared with processor 9 = 15303
+    Number of faces shared with processor 10 = 49
+    Number of faces shared with processor 21 = 5799
+    Number of faces shared with processor 22 = 9
+    Number of faces shared with processor 24 = 1275
+    Number of faces shared with processor 26 = 4202
+    Number of faces shared with processor 29 = 3533
+    Number of processor patches = 7
+    Number of processor faces = 30170
+    Number of boundary faces = 52829
+
+Processor 26
+    Number of cells = 543626
+    Number of faces shared with processor 10 = 15427
+    Number of faces shared with processor 22 = 5765
+    Number of faces shared with processor 25 = 4202
+    Number of faces shared with processor 27 = 1338
+    Number of faces shared with processor 29 = 2
+    Number of faces shared with processor 30 = 3532
+    Number of processor patches = 6
+    Number of processor faces = 30266
+    Number of boundary faces = 53178
+
+Processor 27
+    Number of cells = 543626
+    Number of faces shared with processor 10 = 844
+    Number of faces shared with processor 11 = 103026
+    Number of faces shared with processor 15 = 796
+    Number of faces shared with processor 22 = 2
+    Number of faces shared with processor 23 = 7427
+    Number of faces shared with processor 26 = 1338
+    Number of faces shared with processor 30 = 3842
+    Number of faces shared with processor 31 = 6974
+    Number of processor patches = 8
+    Number of processor faces = 124249
+    Number of boundary faces = 815
+
+Processor 28
+    Number of cells = 543626
+    Number of faces shared with processor 12 = 105223
+    Number of faces shared with processor 13 = 289
+    Number of faces shared with processor 24 = 6708
+    Number of faces shared with processor 29 = 6525
+    Number of processor patches = 4
+    Number of processor faces = 118745
+    Number of boundary faces = 2996
+
+Processor 29
+    Number of cells = 543626
+    Number of faces shared with processor 9 = 2290
+    Number of faces shared with processor 10 = 7
+    Number of faces shared with processor 13 = 101458
+    Number of faces shared with processor 14 = 368
+    Number of faces shared with processor 24 = 3875
+    Number of faces shared with processor 25 = 3533
+    Number of faces shared with processor 26 = 2
+    Number of faces shared with processor 28 = 6525
+    Number of faces shared with processor 30 = 9080
+    Number of processor patches = 9
+    Number of processor faces = 127138
+    Number of boundary faces = 565
+
+Processor 30
+    Number of cells = 543626
+    Number of faces shared with processor 10 = 2260
+    Number of faces shared with processor 11 = 200
+    Number of faces shared with processor 14 = 101431
+    Number of faces shared with processor 15 = 848
+    Number of faces shared with processor 26 = 3532
+    Number of faces shared with processor 27 = 3842
+    Number of faces shared with processor 29 = 9080
+    Number of faces shared with processor 31 = 5897
+    Number of processor patches = 8
+    Number of processor faces = 127090
+    Number of boundary faces = 540
+
+Processor 31
+    Number of cells = 543627
+    Number of faces shared with processor 15 = 105017
+    Number of faces shared with processor 27 = 6974
+    Number of faces shared with processor 30 = 5897
+    Number of processor patches = 3
+    Number of processor faces = 117888
+    Number of boundary faces = 3373
+
+Number of processor faces = 1525012
+Max number of cells = 543627 (0.0002644283% above average 543625.6)
+Max number of processor patches = 10 (46.78899% above average 6.8125)
+Max number of faces between processors = 127138 (33.38964% above average 95313.25)
+
+Time = 0
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_93af0d7001a9ba312df666cf8253a4b00cd3e472.so"
+Creating new library in "dynamicCode/_93af0d7001a9ba312df666cf8253a4b00cd3e472/platforms/linux64GccDPInt32Opt/lib/libcodeStream_93af0d7001a9ba312df666cf8253a4b00cd3e472.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_93af0d7001a9ba312df666cf8253a4b00cd3e472"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_93af0d7001a9ba312df666cf8253a4b00cd3e472
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_93af0d7001a9ba312df666cf8253a4b00cd3e472/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_93af0d7001a9ba312df666cf8253a4b00cd3e472.so
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_fca8dd27035511c2bdb08e75926996bfe4926466.so"
+Creating new library in "dynamicCode/_fca8dd27035511c2bdb08e75926996bfe4926466/platforms/linux64GccDPInt32Opt/lib/libcodeStream_fca8dd27035511c2bdb08e75926996bfe4926466.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_fca8dd27035511c2bdb08e75926996bfe4926466"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_fca8dd27035511c2bdb08e75926996bfe4926466
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_fca8dd27035511c2bdb08e75926996bfe4926466/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_fca8dd27035511c2bdb08e75926996bfe4926466.so
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_361b26d63f10424b306448a75b003789ca4c68ff.so"
+Creating new library in "dynamicCode/_361b26d63f10424b306448a75b003789ca4c68ff/platforms/linux64GccDPInt32Opt/lib/libcodeStream_361b26d63f10424b306448a75b003789ca4c68ff.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_361b26d63f10424b306448a75b003789ca4c68ff"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_361b26d63f10424b306448a75b003789ca4c68ff
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_361b26d63f10424b306448a75b003789ca4c68ff/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_361b26d63f10424b306448a75b003789ca4c68ff.so
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a428f8877e5edcf2fd7ae2ee46dd528efaaee1c2.so"
+Creating new library in "dynamicCode/_a428f8877e5edcf2fd7ae2ee46dd528efaaee1c2/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a428f8877e5edcf2fd7ae2ee46dd528efaaee1c2.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_a428f8877e5edcf2fd7ae2ee46dd528efaaee1c2"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_a428f8877e5edcf2fd7ae2ee46dd528efaaee1c2
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_a428f8877e5edcf2fd7ae2ee46dd528efaaee1c2/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_a428f8877e5edcf2fd7ae2ee46dd528efaaee1c2.so
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_2cc4594fec31d1e5b9197b73445455da31ae77eb.so"
+Creating new library in "dynamicCode/_2cc4594fec31d1e5b9197b73445455da31ae77eb/platforms/linux64GccDPInt32Opt/lib/libcodeStream_2cc4594fec31d1e5b9197b73445455da31ae77eb.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_2cc4594fec31d1e5b9197b73445455da31ae77eb"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_2cc4594fec31d1e5b9197b73445455da31ae77eb
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_2cc4594fec31d1e5b9197b73445455da31ae77eb/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_2cc4594fec31d1e5b9197b73445455da31ae77eb.so
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_32127c5e07922041d12d8ec0eb92ef3c0038d0ff.so"
+Creating new library in "dynamicCode/_32127c5e07922041d12d8ec0eb92ef3c0038d0ff/platforms/linux64GccDPInt32Opt/lib/libcodeStream_32127c5e07922041d12d8ec0eb92ef3c0038d0ff.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_32127c5e07922041d12d8ec0eb92ef3c0038d0ff"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_32127c5e07922041d12d8ec0eb92ef3c0038d0ff
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_32127c5e07922041d12d8ec0eb92ef3c0038d0ff/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_32127c5e07922041d12d8ec0eb92ef3c0038d0ff.so
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_fe169d8eb47b084f354a65eac08c0cd5bf50276a.so"
+Creating new library in "dynamicCode/_fe169d8eb47b084f354a65eac08c0cd5bf50276a/platforms/linux64GccDPInt32Opt/lib/libcodeStream_fe169d8eb47b084f354a65eac08c0cd5bf50276a.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_fe169d8eb47b084f354a65eac08c0cd5bf50276a"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_fe169d8eb47b084f354a65eac08c0cd5bf50276a
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_fe169d8eb47b084f354a65eac08c0cd5bf50276a/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_fe169d8eb47b084f354a65eac08c0cd5bf50276a.so
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_aad52b84cc1682eefe4e32f7120becaafdb9b47e.so"
+Creating new library in "dynamicCode/_aad52b84cc1682eefe4e32f7120becaafdb9b47e/platforms/linux64GccDPInt32Opt/lib/libcodeStream_aad52b84cc1682eefe4e32f7120becaafdb9b47e.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_aad52b84cc1682eefe4e32f7120becaafdb9b47e"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_aad52b84cc1682eefe4e32f7120becaafdb9b47e
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_aad52b84cc1682eefe4e32f7120becaafdb9b47e/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_aad52b84cc1682eefe4e32f7120becaafdb9b47e.so
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a6d6b1d49efa7abc333dad3c2dc800716c782537.so"
+Creating new library in "dynamicCode/_a6d6b1d49efa7abc333dad3c2dc800716c782537/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a6d6b1d49efa7abc333dad3c2dc800716c782537.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_a6d6b1d49efa7abc333dad3c2dc800716c782537"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_a6d6b1d49efa7abc333dad3c2dc800716c782537
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_a6d6b1d49efa7abc333dad3c2dc800716c782537/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_a6d6b1d49efa7abc333dad3c2dc800716c782537.so
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_080e2301431e69e3305590c9770364205729d785.so"
+Creating new library in "dynamicCode/_080e2301431e69e3305590c9770364205729d785/platforms/linux64GccDPInt32Opt/lib/libcodeStream_080e2301431e69e3305590c9770364205729d785.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_080e2301431e69e3305590c9770364205729d785"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_080e2301431e69e3305590c9770364205729d785
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_080e2301431e69e3305590c9770364205729d785/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_080e2301431e69e3305590c9770364205729d785.so
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon"
+Using #codeStream with "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_efbd604f5d2f2cfefdbc5de601314ffb3f758887.so"
+Creating new library in "dynamicCode/_efbd604f5d2f2cfefdbc5de601314ffb3f758887/platforms/linux64GccDPInt32Opt/lib/libcodeStream_efbd604f5d2f2cfefdbc5de601314ffb3f758887.so"
+Invoking "wmake -s libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_efbd604f5d2f2cfefdbc5de601314ffb3f758887"
+wmake libso /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_efbd604f5d2f2cfefdbc5de601314ffb3f758887
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/dynamicCode/_efbd604f5d2f2cfefdbc5de601314ffb3f758887/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_efbd604f5d2f2cfefdbc5de601314ffb3f758887.so
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/epsilon.boundaryField"
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k"
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/k.boundaryField"
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/nut.boundaryField"
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p"
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/p.boundaryField"
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U"
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField"
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.inletOutlet"
+Using #calcEntry at line 19 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 20 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 21 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 23 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 24 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 25 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 26 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 27 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 28 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 29 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 31 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+Using #calcEntry at line 32 in file "/scratch/bmanden/FZK-Haus_2/025m_directions/360_degrees/0/U.boundaryField.top"
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+Processor 4: field transfer
+Processor 5: field transfer
+Processor 6: field transfer
+Processor 7: field transfer
+Processor 8: field transfer
+Processor 9: field transfer
+Processor 10: field transfer
+Processor 11: field transfer
+Processor 12: field transfer
+Processor 13: field transfer
+Processor 14: field transfer
+Processor 15: field transfer
+Processor 16: field transfer
+Processor 17: field transfer
+Processor 18: field transfer
+Processor 19: field transfer
+Processor 20: field transfer
+Processor 21: field transfer
+Processor 22: field transfer
+Processor 23: field transfer
+Processor 24: field transfer
+Processor 25: field transfer
+Processor 26: field transfer
+Processor 27: field transfer
+Processor 28: field transfer
+Processor 29: field transfer
+Processor 30: field transfer
+Processor 31: field transfer
+
+End
+

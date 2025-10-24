@@ -1,0 +1,1133 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-63349425784a
+Exec   : /home/bmanden/OpenFOAM-7/platforms/linux64GccDPInt32Opt/bin/postProcess -dict system/sampleDict -fields (U p k epsilon)
+Date   : Sep 11 2025
+Time   : 04:25:19
+Host   : "cmp247"
+PID    : 3781904
+I/O    : uncollated
+Case   : /scratch/bmanden/FZK-Haus_2/results/05m/360_degrees
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 2000
+
+Reading surface description:
+    z_0.5
+    z_1.0
+    z_1.5
+    z_2.0
+    z_2.5
+    z_3.0
+
+Time = 2000
+
+Reading fields:
+    volScalarFields: p k epsilon
+    volVectorFields: U
+
+Executing functionObjects
+--> FOAM Warning : 
+    From function static bool Foam::cuttingPlane::walkCell(const Foam::primitiveMesh&, const labelUList&, Foam::label, Foam::label, Foam::DynamicList<int>&)
+    in file cuttingPlane/cuttingPlane.C at line 238
+    Did not find closed walk along surface of cell 14149140 starting from edge 46440160 in 1001 iterations.
+Collected cutPoints so far:
+1001
+(
+60820
+61979
+61980
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+61322
+60818
+61321
+)
+
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 37349250, 4(14067839 14068011 14068647 14067840), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 42527398, 4(15773814 15773944 15866431 15849654), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 43931342, 4(16377154 16376535 16376369 16376368), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 44143873, 4(16443311 16445446 16448830 16446645), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 37365858, 4(14073618 14071178 14074234 14072602), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 37349250, 4(14067839 14068011 14068647 14067840), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 42527398, 4(15773814 15773944 15866431 15849654), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 43931342, 4(16377154 16376535 16376369 16376368), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 44143873, 4(16443311 16445446 16448830 16446645), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 37365858, 4(14073618 14071178 14074234 14072602), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 37349250, 4(14067839 14068011 14068647 14067840), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 42527398, 4(15773814 15773944 15866431 15849654), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 43931342, 4(16377154 16376535 16376369 16376368), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 44143873, 4(16443311 16445446 16448830 16446645), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 37365858, 4(14073618 14071178 14074234 14072602), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 37349250, 4(14067839 14068011 14068647 14067840), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 42527398, 4(15773814 15773944 15866431 15849654), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 43931342, 4(16377154 16376535 16376369 16376368), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 44143873, 4(16443311 16445446 16448830 16446645), produces a valid tet decomposition.
+--> FOAM Warning : 
+    From function Foam::triFace Foam::tetIndices::faceTriIs(const Foam::polyMesh&) const
+    in file /home/bmanden/OpenFOAM-7/src/OpenFOAM/lnInclude/tetIndicesI.H at line 76
+    No base point for face 37365858, 4(14073618 14071178 14074234 14072602), produces a valid tet decomposition.
+
+End
+

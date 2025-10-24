@@ -1,0 +1,328 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      sampleDict;
+}
+
+functions
+{
+    verticalLines
+    {
+        type sets;
+        functionObjectLibs ("libsampling.so");
+
+        interpolationScheme cellPoint;
+        setFormat csv;
+
+        fields
+        (
+            U p k epsilon
+        );
+
+        sets
+        (
+            
+            xy_0
+            {
+                type lineUniform;
+                axis z;
+                start (-8 -7 0);
+                end (-8 -7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_1
+            {
+                type lineUniform;
+                axis z;
+                start (-6.0 -7 0);
+                end (-6.0 -7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_2
+            {
+                type lineUniform;
+                axis z;
+                start (-4.0 -7 0);
+                end (-4.0 -7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_3
+            {
+                type lineUniform;
+                axis z;
+                start (-2.0 -7 0);
+                end (-2.0 -7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_4
+            {
+                type lineUniform;
+                axis z;
+                start (0.0 -7 0);
+                end (0.0 -7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_5
+            {
+                type lineUniform;
+                axis z;
+                start (2.0 -7 0);
+                end (2.0 -7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_6
+            {
+                type lineUniform;
+                axis z;
+                start (4.0 -7 0);
+                end (4.0 -7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_7
+            {
+                type lineUniform;
+                axis z;
+                start (6.0 -7 0);
+                end (6.0 -7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_8
+            {
+                type lineUniform;
+                axis z;
+                start (8 -7.0 0);
+                end (8 -7.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_9
+            {
+                type lineUniform;
+                axis z;
+                start (8 -5.0 0);
+                end (8 -5.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_10
+            {
+                type lineUniform;
+                axis z;
+                start (8 -3.0 0);
+                end (8 -3.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_11
+            {
+                type lineUniform;
+                axis z;
+                start (8 -1.0 0);
+                end (8 -1.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_12
+            {
+                type lineUniform;
+                axis z;
+                start (8 1.0 0);
+                end (8 1.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_13
+            {
+                type lineUniform;
+                axis z;
+                start (8 3.0 0);
+                end (8 3.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_14
+            {
+                type lineUniform;
+                axis z;
+                start (8 5.0 0);
+                end (8 5.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_15
+            {
+                type lineUniform;
+                axis z;
+                start (8.0 7 0);
+                end (8.0 7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_16
+            {
+                type lineUniform;
+                axis z;
+                start (6.0 7 0);
+                end (6.0 7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_17
+            {
+                type lineUniform;
+                axis z;
+                start (4.0 7 0);
+                end (4.0 7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_18
+            {
+                type lineUniform;
+                axis z;
+                start (2.0 7 0);
+                end (2.0 7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_19
+            {
+                type lineUniform;
+                axis z;
+                start (0.0 7 0);
+                end (0.0 7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_20
+            {
+                type lineUniform;
+                axis z;
+                start (-2.0 7 0);
+                end (-2.0 7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_21
+            {
+                type lineUniform;
+                axis z;
+                start (-4.0 7 0);
+                end (-4.0 7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_22
+            {
+                type lineUniform;
+                axis z;
+                start (-6.0 7 0);
+                end (-6.0 7 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_23
+            {
+                type lineUniform;
+                axis z;
+                start (-8 7.0 0);
+                end (-8 7.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_24
+            {
+                type lineUniform;
+                axis z;
+                start (-8 5.0 0);
+                end (-8 5.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_25
+            {
+                type lineUniform;
+                axis z;
+                start (-8 3.0 0);
+                end (-8 3.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_26
+            {
+                type lineUniform;
+                axis z;
+                start (-8 1.0 0);
+                end (-8 1.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_27
+            {
+                type lineUniform;
+                axis z;
+                start (-8 -1.0 0);
+                end (-8 -1.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_28
+            {
+                type lineUniform;
+                axis z;
+                start (-8 -3.0 0);
+                end (-8 -3.0 34.5);
+                nPoints 50;
+            }
+        
+
+            xy_29
+            {
+                type lineUniform;
+                axis z;
+                start (-8 -5.0 0);
+                end (-8 -5.0 34.5);
+                nPoints 50;
+            }
+        
+        );
+    }
+}
